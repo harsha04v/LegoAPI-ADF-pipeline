@@ -1,0 +1,19 @@
+{
+	"name": "Ls_HTTP",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "HttpServer",
+		"typeProperties": {
+			"url": "https://rebrickable.com/api/v3/lego/",
+			"enableServerCertificateValidation": true,
+			"authenticationType": "Anonymous",
+			"authHeaders": {
+				"APIKey": {
+					"type": "SecureString",
+					"value": "**********"
+				}
+			}
+		}
+	}
+}
